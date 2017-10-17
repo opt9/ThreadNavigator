@@ -14,9 +14,10 @@
       "timeTo": "now/d",
       "timeFrom": "now/d",
       "refreshInterval": {
-        "display": "Off",
+        "display": "5 minutes",
         "pause": false,
-        "value": 0
+        "section": 2,
+        "value": 300000
       },
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
