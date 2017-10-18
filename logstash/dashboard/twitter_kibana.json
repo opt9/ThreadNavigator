@@ -98,8 +98,7 @@
         "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
       }
     }
-  }
-][
+  },
   {
     "_id": "Top-30-hashtags",
     "_type": "visualization",
