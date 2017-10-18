@@ -1,9 +1,9 @@
 [
   {
-    "_id": "Threat-Navigator-Dashboard",
+    "_id": "Threat-Navigator-Dashboard-(Daily)",
     "_type": "dashboard",
     "_source": {
-      "title": "Threat Navigator Dashboard",
+      "title": "Threat Navigator Dashboard (Daily)",
       "hits": 0,
       "description": "",
       "panelsJSON": "[{\"col\":1,\"id\":\"Total-Tweets\",\"panelIndex\":1,\"row\":1,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Tweets-vs.-time\",\"panelIndex\":3,\"row\":11,\"size_x\":12,\"size_y\":5,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Top-10-Tweets-(by-retweet-volume)\",\"panelIndex\":6,\"row\":5,\"size_x\":12,\"size_y\":6,\"type\":\"visualization\"},{\"col\":7,\"id\":\"Top-30-hashtags\",\"panelIndex\":7,\"row\":1,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"}]",
@@ -14,13 +14,103 @@
       "timeTo": "now/d",
       "timeFrom": "now/d",
       "refreshInterval": {
-        "display": "5 minutes",
+        "display": "1 hour",
         "pause": false,
-        "section": 2,
-        "value": 300000
+        "section": 3,
+        "value": 3600000
       },
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "Threat-Navigator-Dashboard-(Weekly)",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Threat Navigator Dashboard (Weekly)",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"Total-Tweets\",\"panelIndex\":1,\"row\":1,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Tweets-vs.-time\",\"panelIndex\":3,\"row\":11,\"size_x\":12,\"size_y\":5,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Top-10-Tweets-(by-retweet-volume)\",\"panelIndex\":6,\"row\":5,\"size_x\":12,\"size_y\":6,\"type\":\"visualization\"},{\"col\":7,\"id\":\"Top-30-hashtags\",\"panelIndex\":7,\"row\":1,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-6\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now/w",
+      "timeFrom": "now/w",
+      "refreshInterval": {
+        "display": "1 day",
+        "pause": false,
+        "section": 3,
+        "value": 86400000
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "Threat-Navigator-Dashboard-(Monthly)",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Threat Navigator Dashboard (Monthly)",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"Total-Tweets\",\"panelIndex\":1,\"row\":1,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Tweets-vs.-time\",\"panelIndex\":3,\"row\":11,\"size_x\":12,\"size_y\":5,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Top-10-Tweets-(by-retweet-volume)\",\"panelIndex\":6,\"row\":5,\"size_x\":12,\"size_y\":6,\"type\":\"visualization\"},{\"col\":7,\"id\":\"Top-30-hashtags\",\"panelIndex\":7,\"row\":1,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-6\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now/M",
+      "timeFrom": "now/M",
+      "refreshInterval": {
+        "display": "1 day",
+        "pause": false,
+        "section": 3,
+        "value": 86400000
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "Threat-Navigator-Dashboard-(Yearly)",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Threat Navigator Dashboard (Yearly)",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"Total-Tweets\",\"panelIndex\":1,\"row\":1,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Tweets-vs.-time\",\"panelIndex\":3,\"row\":11,\"size_x\":12,\"size_y\":5,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Top-10-Tweets-(by-retweet-volume)\",\"panelIndex\":6,\"row\":5,\"size_x\":12,\"size_y\":6,\"type\":\"visualization\"},{\"col\":7,\"id\":\"Top-30-hashtags\",\"panelIndex\":7,\"row\":1,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-6\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now/y",
+      "timeFrom": "now/y",
+      "refreshInterval": {
+        "display": "1 day",
+        "pause": false,
+        "section": 3,
+        "value": 86400000
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  }
+][
+  {
+    "_id": "Top-30-hashtags",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top 30 hashtags",
+      "visState": "{\"title\":\"Top 30 hashtags\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"log\",\"orientation\":\"single\",\"minFontSize\":18,\"maxFontSize\":72,\"type\":\"tagcloud\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"entities.hashtags.text\",\"size\":30,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"twitter\",\"query\":{\"match_all\":{}},\"filter\":[]}"
       }
     }
   },
@@ -35,20 +125,6 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"twitter\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "Top-30-hashtags",
-    "_type": "visualization",
-    "_source": {
-      "title": "Top 30 hashtags",
-      "visState": "{\"title\":\"Top 30 hashtags\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"log\",\"orientation\":\"single\",\"minFontSize\":18,\"maxFontSize\":72,\"type\":\"tagcloud\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"entities.hashtags.text\",\"size\":30,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"twitter\",\"query\":{\"match_all\":{}},\"filter\":[]}"
       }
     }
   },
